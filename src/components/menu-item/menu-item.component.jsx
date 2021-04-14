@@ -1,8 +1,12 @@
 import React from "react";
 import "./menu-item.style.scss";
+import { withRouter } from "react-router-dom";
 
-const MenuItem = ({ title, imageUrl }) => (
-  <div className="menu-item">
+const MenuItem = ({ title, imageUrl, linkUrl, match, history }) => (
+  <div
+    className="menu-item"
+    onClick={() => history.push(`${match.url}${linkUrl}`)}
+  >
     <div
       style={{
         backgroundImage: `url(${imageUrl})`,
@@ -16,4 +20,4 @@ const MenuItem = ({ title, imageUrl }) => (
   </div>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);
