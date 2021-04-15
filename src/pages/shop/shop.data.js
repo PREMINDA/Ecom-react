@@ -6,26 +6,30 @@ const SHOP_DATA = [
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        name: "Hat",
+        imageUrl:
+          "https://p1.pxfuel.com/preview/955/377/298/girl-woman-profile-cover-hat-beauty.jpg",
         price: 25,
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        name: "Beanie",
+        imageUrl:
+          "https://images.pexels.com/photos/2584278/pexels-photo-2584278.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
         price: 18,
       },
       {
         id: 3,
-        name: "Brown Cowboy",
-        imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        name: "Cap",
+        imageUrl:
+          "https://i.pinimg.com/originals/eb/8b/3d/eb8b3db94654a9473412b6dd5109dddd.jpg",
         price: 35,
       },
       {
         id: 4,
-        name: "Grey Brim",
-        imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
+        name: "Tweed Cap",
+        imageUrl:
+          "https://cdn11.bigcommerce.com/s-scgdirr/images/stencil/685x900/products/22131/56230/driving_02__74273__45563.1587391078.jpg?c=2",
         price: 25,
       },
       {
@@ -67,26 +71,29 @@ const SHOP_DATA = [
     items: [
       {
         id: 1,
-        name: "Adidas NMD",
-        imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
+        name: "ADIDAS",
+        imageUrl:
+          "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
         price: 220,
       },
       {
         id: 2,
-        name: "Adidas Yeezy",
-        imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
+        name: "NIKE",
+        imageUrl:
+          "https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
         price: 280,
       },
       {
         id: 3,
-        name: "Black Converse",
-        imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
+        name: "PUMA",
+        imageUrl:
+          "https://footwearnews.com/wp-content/uploads/2019/10/puma-02.jpg",
         price: 110,
       },
       {
         id: 4,
-        name: "Nike White AirForce",
-        imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
+        name: "VANS",
+        imageUrl: "https://www.popsburritos.com/images/u/vans%20era-520lzi.jpg",
         price: 160,
       },
       {
