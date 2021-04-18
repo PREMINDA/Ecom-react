@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-const config = {
+var firebaseConfig = {
   apiKey: "AIzaSyC7t1b2tL8p7C_vkoii7y1E1RZvpCMbwkE",
   authDomain: "ecom-db-456aa.firebaseapp.com",
   projectId: "ecom-db-456aa",
@@ -10,8 +10,9 @@ const config = {
   messagingSenderId: "480354696241",
   appId: "1:480354696241:web:28b8cebf4db49e21c7e910",
 };
+// Initialize Firebase
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
