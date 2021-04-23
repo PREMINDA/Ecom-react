@@ -8,6 +8,7 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
+
     
   
     &:first-child {
@@ -25,6 +26,7 @@
       background-size: cover;
       background-position: center;
       transition: 1s ease all ;
+      z-index: -2;
     }
 
     &:hover{
@@ -47,6 +49,7 @@
       background-color: white;
       opacity: 0.7;
       position: absolute;
+      z-index: -1;
   
       .title {
         font-weight: bold;
