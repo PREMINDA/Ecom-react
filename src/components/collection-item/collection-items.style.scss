@@ -4,7 +4,9 @@
   flex-direction: column;
   height: 450px;
   align-items: center;
- 
+  position: relative;
+
+
 
 
   .image {
@@ -12,6 +14,30 @@
     height: 95%;
     background-size: cover;
     background-position: center;
+    transition: 0.5s ease all ;
+  }
+  &:hover{
+     .image{
+       opacity: 0.8;
+       transition: 0.5s ease all ;
+     } 
+
+    .custom-button{
+      display: flex;
+      opacity: 0.85;
+    }
+    
+   
+  }
+
+  .custom-button{
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 320px;
+    display: none;
+    
+    
   }
 
   .collection-footer {
@@ -23,6 +49,7 @@
     background-image: linear-gradient( #c3d5e7 0%,transparent 100%);
     overflow: hidden;
 
+   
     .name {
       width: 80%;
       padding-left: 5px;
