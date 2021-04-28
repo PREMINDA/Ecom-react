@@ -1,14 +1,14 @@
-import react from "react";
+import React from "react";
 
 import "./cart-item.componetn.scss";
 
-const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
+const CartItem = ({ item }) => (
   <div className="cart-item">
-    <img src={imageUrl} alt="item" />
+    <img src={item.imageUrl} alt="item" />
     <div className="item-details">
-      <sapn className="name">{name}</sapn>
+      <sapn className="name">{item.name}</sapn>
       <span className="price">
-        {quantity} x ${price}
+        {item.quantity} x ${item.price}
       </span>
     </div>
   </div>
