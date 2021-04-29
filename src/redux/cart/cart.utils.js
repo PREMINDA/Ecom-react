@@ -10,7 +10,7 @@ export const addItemTocart = (cartItems, cartItemToAdd) => {
             ...cartitem,
             quantity: cartitem.quantity + 1,
           }
-        : cartitem
+        : { ...cartitem }
     );
   }
 

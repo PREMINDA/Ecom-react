@@ -17,6 +17,12 @@
       flex-direction: column;
       overflow-y: scroll;
       scrollbar-width: none;
+
+      .empty-text{
+        color: black;
+        font-size: 18px;
+        margin:  auto;
+      }
     }
     
     button {
