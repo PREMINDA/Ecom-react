@@ -6,8 +6,9 @@ import CustomButton from "../custom-button/custom-button.component";
 import { withRouter } from "react-router-dom";
 
 import "./cart-dropdown.style.scss";
+import { toggleCartHidden } from "../../redux/cart/cart.action";
 
-const CartDropdown = ({ cartItems, match, history }) => (
+const CartDropdown = ({ cartItems, dispatch, match, history }) => (
   <div className="cart-dropdown">
     <div className="cart-items">
       {cartItems.length ? (
@@ -18,7 +19,12 @@ const CartDropdown = ({ cartItems, match, history }) => (
         <span className="empty-text">Your Cart is Empty</span>
       )}
     </div>
-    <CustomButton onClick={() => history.push(`${match.url}checkout`)}>
+    <CustomButton
+      onClick={() => {
+        dispatch(toggleCartHidden());
+        history.push(`${match.url}checkout`);
+      }}
+    >
       CHECKOUT
     </CustomButton>
   </div>
