@@ -18,6 +18,12 @@ export const addItemTocart = (cartItems, cartItemToAdd) => {
 };
 
 export const reduseitem = (cartItems, cartItemReduseTo) => {
+  const existingItem = cartItems.find(
+    (cartitem) => cartitem.id === cartItemReduseTo.id
+  );
+  if (existingItem.quantity === 1) {
+    return cartItems.filter((cartItem) => cartItem.id !== cartItemReduseTo.id);
+  }
   return cartItems.map((cartitem) =>
     cartitem.id === cartItemReduseTo.id
       ? {
