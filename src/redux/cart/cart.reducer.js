@@ -1,5 +1,5 @@
 import CartActionTypes from "./cart.types";
-import { addItemTocart } from "./cart.utils";
+import { addItemTocart, reduseitem } from "./cart.utils";
 
 const INITAIL_STATE = {
   hidden: true,
@@ -24,6 +24,11 @@ const cartReduser = (state = INITAIL_STATE, action) => {
         cartItems: state.cartItems.filter(
           (cartitem) => cartitem.id !== action.payload.id
         ),
+      };
+    case CartActionTypes.REDUCE_COUNT:
+      return {
+        ...state,
+        cartItems: reduseitem(state.cartItems, action.payload),
       };
     default:
       return INITAIL_STATE;
