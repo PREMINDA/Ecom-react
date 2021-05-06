@@ -41,7 +41,7 @@ const INITIAL_STATE = {
 };
 
 const directoryReduser = (state = INITIAL_STATE, action) => {
-  switch (action.paylooad) {
+  switch (action.payload) {
     default:
       return state;
   }
