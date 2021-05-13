@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 
 import CollectionItem from "../../components/collection-item/collection-item.component";
-import CollectionPreview from "./../../components/preview-collection/preview-collection.component";
 import { selectCollection } from "./../../redux/collection/shop.selector";
 
 import "./collection.style.scss";

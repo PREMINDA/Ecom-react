@@ -2,6 +2,7 @@ import React from "react";
 
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import StripChButton from "./../../components/strip-button/strip-button.component";
 
 import {
   selectCartItems,
@@ -40,6 +41,7 @@ const CheckoutPage = ({ cartItems, total }) => {
         <span className="empty-text">Your Cart is Empty</span>
       )}
       <h2>{cartItems.length ? total : null}</h2>
+      <StripChButton price={total} />
     </div>
   );
 };
